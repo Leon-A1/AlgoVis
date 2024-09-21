@@ -1,5 +1,6 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Box } from "@mui/material";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import Slideshow from "./Slideshow";
@@ -8,7 +9,7 @@ import { uiChanged } from "../../store/ui";
 
 const Tutorial = () => {
   const dispatch = useDispatch();
-  const { tutorial } = useSelector(({ ui }) => ui);
+  // const { tutorial } = useSelector(({ ui }) => ui);
 
   function handleClick() {
     dispatch(uiChanged({ prop: "tutorial", att: "open", val: true }));
