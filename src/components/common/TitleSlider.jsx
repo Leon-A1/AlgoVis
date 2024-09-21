@@ -14,6 +14,7 @@ const TitleSlider = ({
 }) => {
   const { visualPanel, isMobile } = useSelector(({ ui }) => ui);
   const [val, setVal] = useState(defaultValue);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => setVal(defaultValue), [visualPanel.isReset]);
 
   return (

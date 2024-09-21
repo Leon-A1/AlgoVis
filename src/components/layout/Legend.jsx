@@ -5,6 +5,7 @@ import useGetCategoryAndAlgo from "../../hooks/useGetCategoryAndAlgo";
 
 const Legend = () => {
   const [_, algo] = useGetCategoryAndAlgo();
+  console.log(_);
   const [open, setOpen] = useState(false);
   const dynamicMode = algo === "Dynamic-Path-finding";
   const legend = [

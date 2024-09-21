@@ -25,7 +25,7 @@ const Tutorial = () => {
           transition: "all 0.5s",
           zIndex: 100,
         }}>
-        {!tutorial.done && (
+        {false && (
           <Button
             label="Quick Tutorial"
             handleClick={handleClick}

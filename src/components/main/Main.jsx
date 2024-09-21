@@ -29,6 +29,7 @@ const Main = () => {
       });
     }
     prevCategory = category;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
 
   return (

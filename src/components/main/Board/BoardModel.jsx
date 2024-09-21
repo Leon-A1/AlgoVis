@@ -24,6 +24,7 @@ const Board = () => {
   useEffect(() => {
     animFrame = window.requestAnimationFrame(spinBoard);
     return () => window.cancelAnimationFrame(animFrame);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [grid]);
 
   function spinBoard() {

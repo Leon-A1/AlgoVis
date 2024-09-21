@@ -39,6 +39,7 @@ const useResizeGrid = (containerRef) => {
       clearTimeout(resizeTimeout);
       clearTimeout(tableTimeout);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isReset]);
 
   useEffect(() => {
@@ -51,6 +52,7 @@ const useResizeGrid = (containerRef) => {
       clearTimeout(tableTimeout);
       clearTimeout(resizeTimeout);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [height, width, nodeSize]);
 };
 

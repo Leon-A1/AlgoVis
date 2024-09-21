@@ -21,7 +21,7 @@ const Slideshow = () => {
       img: "",
     },
   ]);
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => setSlides(getSlides(isMobile)), []);
 
   const handleNext = () => {

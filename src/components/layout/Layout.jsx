@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
         val: angle === 90 ? "landscape" : "portrait",
       })
     );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

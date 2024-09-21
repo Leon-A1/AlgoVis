@@ -10,6 +10,7 @@ const Axle = () => {
     ({ ui }) => ui.threeD
   );
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => initAxle(numOfBars, dispatch), [numOfBars]);
 
   return (
